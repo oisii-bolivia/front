@@ -48,7 +48,7 @@ main .parameter picture {
 
 .chat {
   width: 370px;
-  height: 350px;
+  height: auto;
   border-radius: 10px;
   background: lightgray;
   margin: 0 auto;
@@ -58,23 +58,27 @@ main .parameter picture {
   align-items: center;
   overflow: scroll;
 }
-.chat .chat2110, .chat .chat2211, .chat .chat2314 {
+.chat .chat2110,
+.chat .chat2211,
+.chat .chat2314 {
   width: 242px;
   height: auto;
+  margin-bottom: 30px;
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-.chat .chat2110 p, .chat .chat2211 p, .chat .chat2314 p {
+.chat .chat2110 p,
+.chat .chat2211 p,
+.chat .chat2314 p {
   width: 100%;
   color: #FFF;
   text-align: center;
   padding: 16px;
-  margin-bottom: 30px;
   background: #767676;
   border-radius: 10px;
 }
-.chat .chat2110 p:last-child, .chat .chat2211 p:last-child, .chat .chat2314 p:last-child {
+.chat .chat2314 {
   margin-bottom: 0;
 }
 
