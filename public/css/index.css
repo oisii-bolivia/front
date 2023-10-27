@@ -51,7 +51,7 @@ main .parameter picture {
   height: auto;
   border-radius: 10px;
   background: lightgray;
-  margin: 0 auto;
+  margin: 0 auto 32px;
   padding: 20px 64px 80px;
   display: flex;
   flex-flow: column;
@@ -63,7 +63,7 @@ main .parameter picture {
 .chat .chat2314 {
   width: 242px;
   height: auto;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   display: flex;
   flex-flow: column;
   align-items: center;
