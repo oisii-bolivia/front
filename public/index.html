@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>トップページ</title>
+
+    <!-- 公開の際必要なmeta情報 課題時はコメントでも可です -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@twitteraccount">
+    <meta property="og:site_name" content="サイト名">
+    <meta property="og:title" content="サイトタイトル">
+    <meta property="og:description" content="サイト説明文">
+    <meta property="og:url" content="https://hoge.ecc.com/">
+    <meta property="og:image" content="https://hoge.ecc.com/ogp.png">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <!-- ページのスタイルはheadの最後に記載 -->
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
     <header>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="hammenu">
+            <div class="hamburger2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="user">
+                <figure>
+                    <img src="images/usericon.svg" alt="アイコン">
+                </figure>
+                <h1>ユーザー名</h1>
+                <p class="icon"><a class="iconedit" href="#">プロフィール</a></p>
+            </div>
+            <div class="other">
+                <p class="icon"><a class="iconhelp" href="#">よくある質問</a></p>
+                <p class="icon"><a class="iconset" href="#">設定</a></p>
+                <p class="icon"><a class="iconaut" href="#">ログアウト</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
         <div class="mainvi">
             <figure>
                 <img src="./images/plant1.png" alt="植物">
             </figure>
         </div>
-    </header>
-    <main>
-        <div class="parameter">
+        <!-- <div class="parameter">
             <p>植物の名前</p>
             <picture>
                 <img src="images/parameter.svg" alt="パラメーター">
             </picture>
-        </div>
+        </div> -->
         <div class="chat">
             <div class="chat2110">
                 <time datetime="21:10">21:10</time>
@@ -35,7 +81,8 @@
 
             <div class="chat2314">
                 <time datetime="23:14">23:14</time>
-                <p>レスポンステキストがここに入りますレスポンステキストがここに入りますレスポンステキストがここに入りますレスポンステキストがここに入りますレスポンステキストがここに入りますレスポンステキストがここに入ります</sub></p>
+                <p>レスポンステキストがここに入りますレスポンステキストがここに入りますレスポンステキストがここに入りますレスポンステキストがここに入りますレスポンステキストがここに入りますレスポンステキストがここに入ります</sub>
+                </p>
             </div>
 
         </div>
@@ -43,5 +90,8 @@
     <footer>
         <div class="fobtn"></div>
     </footer>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>
